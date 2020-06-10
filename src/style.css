@@ -9,11 +9,22 @@
 }
 
 .fonte-titulo {
-    font-family: 'Pacifico', cursive;
+    font-family: "Rockwell Extra Bold";
+    font-weight: bold;
 }
 
 .texto-cor-especial {
-    color: darkred!important;
+    font-family: "Bauhaus 93";
+    font-weight: bold;
+    color : darkred!important;
+    font-style: normal;
+}
+.texto-cor-especial- {
+    font-style: normal;
+    font-family: "Bauhaus 93";
+    font-weight: bold;
+    color:black!important;
+    margin-left:-13px;
 }
 
 .botao-cor-especial {
@@ -28,4 +39,13 @@
 .card-posicao-imagem {
     object-fit: cover;
     height: 200px;
+}
+.texto-preco{
+    color: gray;
+    font-family: "bahnschrift light condensed";
+    margin-top:-33px;
+    margin-left:196px;
+}
+.card-text-{
+    color:gray;
 }
