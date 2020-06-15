@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="src/style.css">
+
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                     <li><a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a></li>
                     <li><a class="nav-item nav-link" href="#teste">Lanches</a></li>
                     <li><a class="nav-item nav-link" href="#">Quem Somos</a></li>
-                    <li><a class="nav-item nav-link" data-toggle="modal" data-target="#modal-contato" href="#">Carrinho</a></li>
+                    <li><a class="nav-item nav-link" onclick="carregaCarrinho()" data-toggle="modal" data-target="#modal-contato" href="#">Carrinho</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,33 +73,33 @@
         <section class="bg-light" id="receitas">
             <div class="container-fluid row justify-content-center">
                 <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-                    <img src="src/img/hamb_1.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 1">
+                    <img id="img1" src="src/img/hamb_1.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 1">
                     <div class="card-body">
-                        <h5 class="card-title">Sirius Burguer</h5>
-                        <h5 class="texto-preco">R$25</h5>
-                        <p class="card-text">Feito com 200 deliciosas gramas de carne 100% bovina, nosso molho especial, picles, cebola roxa, bacon, tomate e alface.</p>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <h5 id="title1" class="card-title">Sirius Burguer</h5>
+                        <h5 id="price1" class="texto-preco">R$25</h5>
+                        <p id="sub1" class="card-text">Feito com 200 deliciosas gramas de carne 100% bovina, nosso molho especial, picles, cebola roxa, bacon, tomate e alface.</p>
+                        <button href="#" onclick = "setLocalStorage(1)" id="btProductSirius" class="btn botao-cor-especial">Adicionar ao carrinho</button>
                     </div>
                 </article>
 
                 <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-                    <img src="src/img/hamb_2.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 2">
+                    <img id="img2" src="src/img/hamb_2.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 2">
                     <div class="card-body">
-                        <h5 class="card-title">Vega Burguer</h5>
-                        <h5 class="texto-preco">R$28</h5>
-                        <p class="card-text">Feito com 300 gramas de carne 100% bovina, nosso cheddar da casa, bacon, tomate e alface rúcula.</p>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <h5 id="title2" class="card-title">Vega Burguer</h5>
+                        <h5 id="price2" class="texto-preco">R$28</h5>
+                        <p id="sub2" class="card-text">Feito com 300 gramas de carne 100% bovina, nosso cheddar da casa, bacon, tomate e alface rúcula.</p>
+                        <a href="#" onclick = "setLocalStorage(2)" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
 
                 <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-                    <img src="src/img/hamb_3.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 3">
+                    <img id="img3" src="src/img/hamb_3.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 3">
                     <div class="card-body">
-                        <h5 class="card-title">Antares Burguer</h5>
-                        <h5 class="texto-preco">R$23</h5>
-                        <p class="card-text">Feito com 200 gramas de carne 100% bovina, molho de ervas, bacon e molho barbecue.</p>
+                        <h5 id="title3" class="card-title">Antares Burguer</h5>
+                        <h5 id="price3" class="texto-preco">R$23</h5>
+                        <p id="sub3" class="card-text">Feito com 200 gramas de carne 100% bovina, molho de ervas, bacon e molho barbecue.</p>
                         <br>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <a href="#" onclick = "setLocalStorage(3)" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
             </div>
@@ -111,12 +112,12 @@
         <section class="bg-light" id="receitas">
             <div class="container-fluid row justify-content-center">
                 <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
-                    <img src="src/img/batata_trad.jpg" class="card-img-top card-posicao-imagem" alt="batata tradicional">
+                    <img id="img4" src="src/img/batata_trad.jpg" class="card-img-top card-posicao-imagem" alt="batata tradicional">
                     <div class="card-body">
-                        <h5 class="card-title">Batata Tradicional</h5>
-                        <h5 class="texto-preco">R$8</h5>
-                        <p class="card-text-">*Acompanha molhos</p>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <h5 id="title4" class="card-title">Batata Tradicional</h5>
+                        <h5 id="price4" class="texto-preco">R$8</h5>
+                        <p id="sub4" class="card-text-">*Acompanha molhos</p>
+                        <a href="#" onclick = "setLocalStorage(4)" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
 
@@ -126,7 +127,7 @@
                         <h5 class="card-title">Batata em Onda</h5>
                         <h5 class="texto-preco">R$9</h5>
                         <p class="card-text-">*Acompanha molhos</p>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <a href="#" value="9" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
 
@@ -136,7 +137,7 @@
                         <h5 class="card-title">Batata Rústica</h5>
                         <h5 class="texto-preco">R$10</h5>
                         <p class="card-text-">*Acompanha molhos</p>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <a href="#" value="10" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
             </div>
@@ -154,7 +155,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Sucos Naturais</h5>
                         <h5 class="texto-preco">R$12</h5>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <a href="#" value="12" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
 
@@ -163,7 +164,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Refrigerantes</h5>
                         <h5 class="texto-preco">R$8</h5>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <a href="#" value="8" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
 
@@ -172,7 +173,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Chá Gelado</h5>
                         <h5 class="texto-preco">R$8</h5>
-                        <a href="#" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <a href="#" value="8" class="btn botao-cor-especial">Adicionar ao carrinho</a>
                     </div>
                 </article>
             </div>
@@ -185,7 +186,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <dialog class="modal-content">
@@ -218,8 +219,27 @@
                 </footer>
             </dialog>
         </div>
-    </div>
-
+    </div> -->
+    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+            <dialog class="modal-content">
+                <header class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </header>
+                <main class="modal-body">
+                    <div id=carrinho></div>
+                    <div>Total: <span id="total"></span> </div>
+                </main>
+                <footer class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn botao-cor-especial">Enviar</button>
+                </footer>
+            </dialog>
+        </div>
+    </div> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -229,6 +249,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="src/index.js"></script>
 
 </body>
 
