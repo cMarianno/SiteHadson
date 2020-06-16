@@ -41,6 +41,17 @@ function carregaCarrinho(){
     document.getElementById("total").innerHTML = total;
 }
 
+function finalizarCompra(){
+
+    let ProdutosFinal = {
+        "comentario": $("#exampleFormControlTextarea1").val(),
+        "price": $("#total").text(),
+    };
+
+    localStorage.setItem("finalizarCompra", JSON.stringify(ProdutosFinal));
+}
+
 $(document).ready(function () {    
     localStorage.setItem("carrinhoCompra", "");
+    localStorage.setItem("finalizarCompra", "");
 })
