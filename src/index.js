@@ -23,14 +23,22 @@ function setLocalStorage(id){
 
 function carregaCarrinho(){
 
+    let total = 0.0;
+    let carrinhoCompra;
     if (localStorage.getItem("carrinhoCompra") !== "null")
         if (localStorage.getItem("carrinhoCompra") !== null)
             if (localStorage.getItem("carrinhoCompra") !== "")
                 carrinhoCompra = JSON.parse(localStorage.getItem("carrinhoCompra"));
+    
+    if(carrinhoCompra != null){
+        document.getElementById("carrinho").innerHTML = "";
+        carrinhoCompra.forEach(element => {
+            document.getElementById("carrinho").innerHTML += element.title + " -  R$" + element.price + "<hr>";
+            total += parseFloat(element.price);
+        });
+    }
 
-    carrinhoCompra.forEach(element => {
-        document.getElementById("carrinho").innerHTML += element.title + " -  R$" + element.price + "<hr>";
-    });
+    document.getElementById("total").innerHTML = total;
 }
 
 $(document).ready(function () {    
