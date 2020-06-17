@@ -1,0 +1,105 @@
+.card-largura {
+    max-width: 18rem;
+}
+.fonte-titulo {
+    font-family: "Rockwell Extra Bold";
+    font-weight: bold;
+}
+
+.texto-cor-especial {
+    font-family: "Bauhaus 93";
+    font-weight: bold;
+    color : darkred!important;
+    font-style: normal;
+}
+.texto-cor-especial- {
+    font-style: normal;
+    font-family: "Bauhaus 93";
+    font-weight: bold;
+    color:black!important;
+    margin-left:-13px;
+}
+
+.botao-cor-especial {
+    background-color: darkred;
+    color: white;
+}
+
+.borda-cor-especial {
+    border-color: darkred;
+}
+.imgm{
+    margin-left: 77px;
+    margin-top: 104px;
+    height: 20px;
+    width: 20px;
+}
+.nossa{
+    font-family: "Arial";
+    font-style: normal;
+    color: darkred!important;
+    margin-top: -5px;
+    margin-left: 882px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.somos{
+    font-family: "Berlin Sans ";
+    color: black!important;
+    margin-top: 18px;
+    margin-left: 811px;
+    font-size: 23px;
+    text-align: center;
+}
+li.separador {
+ width: 90%;
+    border-top: 1px solid darkred;
+    list-style-type: none;
+    margin-top: 155px;
+    margin-left: 80px;
+}
+.contato{
+    font-family: "Georgia";
+    color: black!important;
+    margin-top: -10px;
+    margin-left: 153px;
+    font-size: 41px;
+    text-align: center;
+    font-weight: bold;
+
+}
+ul.none {
+    list-style-type: none;
+    font-style: normal;
+    font-family: "arial";
+    font-weight: bold;
+    margin-left: 605px;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    height: 110px;
+    width: 681px;
+    margin-top: -119px;
+    font-size: 18px;
+}
+.deliver{
+    font-family: "arial";
+    margin-top: -409px;
+    margin-left: 865px;
+    color: Grey;
+    font-weight: bold;
+    font-size: 26px;
+}
+ul.hora {
+    list-style-type: none;
+    font-style: normal;
+    font-family: "arial";
+    font-weight: bold;
+    margin-left: 565px;
+    text-align: center;
+    color: Grey;
+    height: 110px;
+    width: 681px;
+    margin-top: 31px;
+    font-size: 23px;
+}
