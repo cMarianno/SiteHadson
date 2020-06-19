@@ -19,6 +19,7 @@ function setLocalStorage(id){
 
         jProdutos.products.push(ProdutosE);
     localStorage.setItem("carrinhoCompra", JSON.stringify(jProdutos.products));
+    document.getElementById("titulo").innerHTML +=  "<div class='alert alert-success alert-dismissible fade show' role='alert'> <strong>Que Otimo!</strong> Seu pedido foi inserido no Carrinho. <button type='button' class='close' data-dismiss='alert' aria-label='Close'> <span aria-hidden='true'>&times;</span> </button> </div>";
 }
 
 function carregaCarrinho(){

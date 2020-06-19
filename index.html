@@ -25,8 +25,8 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <ul class="navbar-nav">
                     <li><a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a></li>
-                    <li><a class="nav-item nav-link" href="#teste">Lanches</a></li>
-                    <li><a class="nav-item nav-link" href="#">Quem Somos</a></li>
+                    <li><a class="nav-item nav-link" href="#titulo">Lanches</a></li>
+                    <li><a class="nav-item nav-link" href="/quemsomos.html">Quem Somos</a></li>
                     <li><a class="nav-item nav-link" onclick="carregaCarrinho()" data-toggle="modal" data-target="#modal-contato" href="#">Carrinho</a></li>
                 </ul>
             </div>
@@ -70,7 +70,7 @@
             <p class="text-center text-secondary pb-5">Experimente o hambúrguer mais suculento da região!</p>
         </section>
 
-        <section class="bg-light" id="receitas">
+        <section class="bg-light" id="lanches">
             <div class="container-fluid row justify-content-center">
                 <article class="card borda-cor-especial card-largura p-0 m-4 col-12 col-md-4">
                     <img id="img1" src="src/img/hamb_1.jpg" class="card-img-top card-posicao-imagem" alt="hamburguer 1">
@@ -78,7 +78,7 @@
                         <h5 id="title1" class="card-title">Sirius Burguer</h5>
                         <h5 id="price1" class="texto-preco">R$25</h5>
                         <p id="sub1" class="card-text">Feito com 200 deliciosas gramas de carne 100% bovina, nosso molho especial, picles, cebola roxa, bacon, tomate e alface.</p>
-                        <button href="#" onclick = "setLocalStorage(1)" class="btn botao-cor-especial">Adicionar ao carrinho</button>
+                        <button onclick = "setLocalStorage(1)" class="btn botao-cor-especial">Adicionar ao carrinho</button>
                     </div>
                 </article>
 
@@ -88,7 +88,7 @@
                         <h5 id="title2" class="card-title">Vega Burguer</h5>
                         <h5 id="price2" class="texto-preco">R$28</h5>
                         <p id="sub2" class="card-text">Feito com 300 gramas de carne 100% bovina, nosso cheddar da casa, bacon, tomate e alface rúcula.</p>
-                        <a href="#" onclick = "setLocalStorage(2)" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <button onclick = "setLocalStorage(2)" class="btn botao-cor-especial">Adicionar ao carrinho</button>
                     </div>
                 </article>
 
@@ -99,7 +99,7 @@
                         <h5 id="price3" class="texto-preco">R$23</h5>
                         <p id="sub3" class="card-text">Feito com 200 gramas de carne 100% bovina, molho de ervas, bacon e molho barbecue.</p>
                         <br>
-                        <a href="#" onclick = "setLocalStorage(3)" class="btn botao-cor-especial">Adicionar ao carrinho</a>
+                        <button onclick = "setLocalStorage(3)" class="btn botao-cor-especial">Adicionar ao carrinho</button>
                     </div>
                 </article>
             </div>
@@ -243,6 +243,13 @@
                 </footer>
             </dialog>
         </div>
+
+        <!-- <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div> -->
     </div> 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
