@@ -49,3 +49,44 @@
 .card-text-{
     color:gray;
 }
+.login{
+    background-color: #f8f9fa;
+    height: 369px;
+    width: 777px;
+    margin-left: 25%;
+    margin-top: 131px;
+}
+.drop{
+    list-style:none; 
+    float:left; 
+}
+.drop li{
+    position:relative; 
+    float:left; 
+}
+.drop li a{
+    color:#333;
+     text-decoration:none;
+      padding:5px 7px;
+       display:block;
+    }
+ 
+
+.drop li  ul{
+    position:absolute; 
+    top:25px; 
+    left:0;
+    background-color:#fff; 
+    display:none;
+}
+	
+.drop li:hover ul, .drop li.over ul{display:block;}
+
+.drop li ul li{
+    border:1px solid #c0c0c0; 
+    display:block; 
+    width:150px;
+}
+
+
+

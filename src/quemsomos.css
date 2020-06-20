@@ -1,3 +1,11 @@
+.centralizar{
+     position: relative;
+    width: 1248px;
+    margin: 0 auto;
+    height: 1143px;
+    background-color: white;
+    margin-top:60px;
+}
 .card-largura {
     max-width: 18rem;
 }
@@ -30,7 +38,7 @@
 }
 .imgm{
     margin-left: 77px;
-    margin-top: 104px;
+    margin-top: 44px;
     height: 20px;
     width: 20px;
 }
