@@ -68,10 +68,11 @@ function Salvar(){
     
     if(senha != senha2)
         alert("As senhas não batem, tente novamente!");
-    else
+    else{
         localStorage.setItem(nome,email,datanasc,celular,senha,senha2);
         alert("Cadastrado com sucesso !");
-        window.location.href = "endereco.html";
+        window.location.href = "/src/html/endereco.html";
+    }
 
 }
 
