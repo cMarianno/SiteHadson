@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <script src= "../js/index.js"></script>
+    <script src="../js/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Star Burguer</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
@@ -11,57 +11,92 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
+
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">STAR<span class="navbar-brand fonte-titulo texto-cor-especial-"> BURGUER</span></a>
+            <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">STAR<span
+                    class="navbar-brand fonte-titulo texto-cor-especial-"> BURGUER</span></a>
             <!-- <a class="navbar-brand fonte-titulo texto-cor-especial-" href="#">BURGUER</a> -->
     </header>
-    
-    <main>
-    <div class = "login">
+
+    <!-- <main>
+        <div class="login">
+            <h2 class="text-center fonte-titulo texto-cor-especial pt-5">CADASTRO</h2>
+            <label>Nome:</label>
+            <input type="text" id="txtNome" />
+            <br />
+            <label>E-mail:</label>
+            <input type="email" id="txtEmail" />
+            <br />
+            <label>Celular:</label>
+            <input type="text" id="txtNumber" />
+            <br />
+            <label>Data de Nascimento:</label>
+            <input type="date" id="txtData" />
+            <br />
+            <label>Senha:</label>
+            <input type="password" id="txtSenha" />
+            <br />
+            <label>Repetir Senha:</label>
+            <input type="password" id="txtSenhaConfir" />
+            <br />
+            <input type="button" value="CADASTRAR" onclick="Salvar()" />
+            <a href="login.html">Já tenho uma conta</a>
+        </div>
+    </main> -->
+
+    <div class="login">
         <h2 class="text-center fonte-titulo texto-cor-especial pt-5">CADASTRO</h2>
-        <label>Nome:</label>
-        <input type = "text" id = "txtNome" />
-        <br />
-        <label>E-mail:</label>
-        <input type = "email" id = "txtEmail" />
-        <br />
-        <label>Celular:</label>
-        <input type = "text" id = "txtNumber" />
-        <br />
-        <label>Data de Nascimento:</label>
-        <input type = "date" id = "txtData" />
-        <br />
-        <label>Senha:</label>
-        <input type = "password" id = "txtSenha" />
-        <br />
-        <label>Repetir Senha:</label>
-        <input type = "password" id = "txtSenhaConfir" />
-        <br />
-        <input type = "button" value = "CADASTRAR" onclick="Salvar()" />
-        <a href="login.html">Já tenho uma conta</a>
+        <form class="mt-5">
+            <div class="form-group row">
+                <label for="txtNome" class="col-sm-2 col-form-label">Nome: </label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="txtNome" placeholder="nome">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtEmail" class="col-sm-2 col-form-label">Email: </label>
+                <div class="col-sm-7">
+                    <input type="email" class="form-control" id="txtEmail" placeholder="email@example">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtNumber" class="col-sm-2 col-form-label">Celular: </label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="txtNumber" placeholder="11 1232-3445">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtData" class="col-sm-4 col-form-label">Data de Nascimento: </label>
+                <div class="col-sm-5">
+                    <input type="date" class="form-control" id="txtData">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtSenha" class="col-sm-2 col-form-label">Senha: </label>
+                <div class="col-sm-7">
+                    <input type="password" class="form-control" id="txtSenha">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="txtSenhaConfir" class="col-sm-3 col-form-label">Repetir Senha: </label>
+                <div class="col-sm-7">
+                    <input type="password" class="form-control" id="txtSenhaConfir">
+                </div>
+            </div>
+            <div class="form-group row">
+                <button type="submit" class="btn btn-success" onclick="Salvar()">CADASTRAR</button>
+                <small class=" col-form-label ml-2"><a href="login.html">Já tenho uma conta</a></small>
+            </div>
+        </form>
+
     </div>
-</main>       
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
 
-        <footer class="bg-dark p-3">
-            <p class="text-light m-0 text-center">contato: <a class="text-light" href="mailto:email@starburguer.com.br">email@starburguer.com.br</a></p>
-        </footer>
+
+    <footer class="bg-dark p-3">
+        <p class="text-light m-0 text-center">contato: <a class="text-light"
+                href="mailto:email@starburguer.com.br">email@starburguer.com.br</a></p>
+    </footer>
 </body>
-    
-
-   
-   
-
-  
-
-

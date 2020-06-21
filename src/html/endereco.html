@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <script src= "../js/index.js"></script>
+    <script src="../js/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Star Burguer</title>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
@@ -11,43 +11,74 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
+
 <body>
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">STAR<span class="navbar-brand fonte-titulo texto-cor-especial-"> BURGUER</span></a>
+            <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">STAR<span
+                    class="navbar-brand fonte-titulo texto-cor-especial-"> BURGUER</span></a>
             <!-- <a class="navbar-brand fonte-titulo texto-cor-especial-" href="#">BURGUER</a> -->
     </header>
 
-    <div class = "login">
+    <!-- <div class="login">
         <h2 class="text-center fonte-titulo texto-cor-especial pt-5">Olá ,Seja bem vindo!</h2>
-    </br>
+        </br>
         <div><b>O valor total do seu pedido é:</b> R$<span id="total"></span> </div>
-    </br>
+        </br>
         <label>Digite seu endereço:</label>
-         <input type = "text" id = "txtEndereco" />  
+        <input type="text" id="txtEndereco" />
         </br>
         </br>
-         <label>Pague na entrega ! Selecione a forma de pagamento:</label>
-         <nav>
+        <label>Pague na entrega ! Selecione a forma de pagamento:</label>
+        <nav>
             <ul class="drop">
-                      <li><a href="#">Forma de pagamento:</a>
-                          <ul>
-                                <li><a href="#">Dinheiro</a></li>
-                                <li><a href="#">Débito/Crédito - Visa</a></li>
-                                <li><a href="#">Débito/Crédito - Mastercard</a></li>
-                                <li><a href="#">Débito/Crédito - Elo</a></li>                                                 
-                          </ul>
-                      </li>             
-          </ul>
-          </nav>
+                <li><a href="#">Forma de pagamento:</a>
+                    <ul>
+                        <li><a href="#">Dinheiro</a></li>
+                        <li><a href="#">Débito/Crédito - Visa</a></li>
+                        <li><a href="#">Débito/Crédito - Mastercard</a></li>
+                        <li><a href="#">Débito/Crédito - Elo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         </br>
         </br>
-          <input type = "button" value = "Enviar Pedido" onclick="Enviar()" />
-         </div>
+        <input type="button" value="Enviar Pedido" onclick="Enviar()" />
     </div>
-    
+    </div> -->
+
+    <div class="login">
+        <h2 class="text-center fonte-titulo texto-cor-especial pt-5">Olá, Seja bem vindo!</h2>
+        <form class="mt-5 form-login">
+            <div class="mb-3">
+                <b>O valor total do seu pedido é:</b> R$<span id="total"></span>
+            </div>
+            <div class="form-group row">
+                <label for="txtEndereco" class="col-sm-4 col-form-label">Digite seu endereço:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="txtEndereco" placeholder="Rua tal">
+                </div>
+            </div>
+            <label class="mb-3"><b>Pague na entrega! Selecione a forma de pagamento:</b></label>
+            <div class="form-group row">
+                <label for="exampleFormControlSelect2" class="col-sm-4 col-form-label">Forma de pagamento:</label>
+                <div class="col-sm-6">
+                    <select class="form-control" id="exampleFormControlSelect2">
+                        <option>Dinheiro</option>
+                        <option>Débito/Crédito - Visa</option>
+                        <option>Débito/Crédito - Mastercard</option>
+                        <option>Débito/Crédito - Elo</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success" onclick="Enviar()">Enviar Pedido</button>
+        </form>
+    </div>
+
     <footer class="bg-dark p-3">
-        <p class="text-light m-0 text-center">contato: <a class="text-light" href="mailto:email@starburguer.com.br">email@starburguer.com.br</a></p>
+        <p class="text-light m-0 text-center">contato: <a class="text-light"
+                href="mailto:email@starburguer.com.br">email@starburguer.com.br</a></p>
     </footer>
 </body>
