@@ -50,7 +50,7 @@ function finalizarCompra(){
     };
 
     localStorage.setItem("finalizarCompra", JSON.stringify(ProdutosFinal));
-    window.location.href = "src/finalizar.html";
+    window.location.href = "src/html/finalizar.html";
 }
 
 $(document).ready(function () {    
