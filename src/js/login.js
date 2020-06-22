@@ -11,10 +11,25 @@ function PesquisaPorEmail(){
 
     contasCriadas.forEach(element => {
         if(email == element.email && senha == element.senha){
+            spop({
+                autoclose: 3000,
+                template: 'Login Feito Com Sucesso',
+                group: 'submit-satus',
+                style: 'sucess',
+                //style: 'success'
+            });
             window.location.href = "endereco.html";
             contaCerta++;
         }
     });
-    if(contaCerta == null)
-        alert("Deu ruim");
+    if(contaCerta == null){
+        spop({
+            autoclose: 3000,
+            template: 'Esta Conta não existe',
+            group: 'submit-satus',
+            style: 'error',
+            //style: 'success'
+        });
+    }
+
 }

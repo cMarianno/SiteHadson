@@ -24,7 +24,6 @@ function Salvar(){
         erros++;
 
     if(senha != senha2){
-        alert("As senhas não batem, tente novamente!");
         erros++;
     }
 
@@ -49,8 +48,23 @@ function Salvar(){
             jContas.contas.push(ContasC);
         localStorage.setItem("Contas", JSON.stringify(jContas.contas));
 
-        alert("Cadastrado com sucesso !");
+        spop({
+            autoclose: 3000,
+            template: 'Cadastrado com sucesso !',
+            group: 'submit-satus',
+            style: 'success',
+            //style: 'success'
+        });
+
         window.location.href = "/src/html/login.html";
+    }else{
+        spop({
+            autoclose: 3000,
+            template: 'Complete Todos Os Campos Corretamente',
+            group: 'submit-satus',
+            style: 'error',
+            //style: 'success'
+        });
     }
 }
 

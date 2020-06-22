@@ -19,7 +19,14 @@ function setLocalStorage(id){
 
         jProdutos.products.push(ProdutosE);
     localStorage.setItem("carrinhoCompra", JSON.stringify(jProdutos.products));
-    document.getElementById("titulo").innerHTML +=  "<div class='alert alert-success alert-dismissible fade show' role='alert'> <strong>Que Otimo!</strong> Seu pedido foi inserido no Carrinho. <button type='button' class='close' data-dismiss='alert' aria-label='Close'> <span aria-hidden='true'>&times;</span> </button> </div>";
+    
+    spop({
+        autoclose: 3000,
+        template: 'Produto Adicionado com Sucesso',
+        group: 'submit-satus',
+        style: 'success',
+        //style: 'error'
+    });
 }
 
 function carregaCarrinho(){
@@ -44,13 +51,30 @@ function carregaCarrinho(){
 
 function finalizarCompra(){
 
-    let ProdutosFinal = {
-        "comentario": $("#exampleFormControlTextarea1").val(),
-        "price": $("#total").text(),
-    };
+    let carrinhoCompra;
+    if (localStorage.getItem("carrinhoCompra") !== "null")
+        if (localStorage.getItem("carrinhoCompra") !== null)
+            if (localStorage.getItem("carrinhoCompra") !== "")
+                carrinhoCompra = JSON.parse(localStorage.getItem("carrinhoCompra"));
 
-    localStorage.setItem("finalizarCompra", JSON.stringify(ProdutosFinal));
-    window.location.href = "src/html/finalizar.html";
+    if(carrinhoCompra != null){
+        let ProdutosFinal = {
+            "comentario": $("#exampleFormControlTextarea1").val(),
+            "price": $("#total").text(),
+        };
+
+        localStorage.setItem("finalizarCompra", JSON.stringify(ProdutosFinal));
+        window.location.href = "src/html/finalizar.html";
+    }else{
+        spop({
+            autoclose: 3000,
+            template: 'Não Possui Nenhum Item No Carrinho',
+            group: 'submit-satus',
+            style: 'error',
+            //style: 'success'
+        });
+    }
+    
 }
 
 $(document).ready(function () {    
