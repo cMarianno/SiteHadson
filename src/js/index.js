@@ -57,39 +57,3 @@ $(document).ready(function () {
     localStorage.setItem("carrinhoCompra", "");
     localStorage.setItem("finalizarCompra", "");
 })
-
-function Salvar(){
-    var nome = document.getElementById("txtNome").value;
-    var email = document.getElementById("txtEmail").value;
-    var datanasc = document.getElementById("txtData").value;
-    var celular = document.getElementById("txtNumber").value;
-    var senha = document.getElementById("txtSenha").value;
-    var senha2 = document.getElementById("txtSenhaConfir").value;
-    
-    if(senha != senha2)
-        alert("As senhas não batem, tente novamente!");
-    else{
-        localStorage.setItem(nome,email,datanasc,celular,senha,senha2);
-        alert("Cadastrado com sucesso !");
-        window.location.href = "/src/html/endereco.html";
-    }
-
-}
-
-function PesquisaPorEmail(){
-    var email = document.getElementById("txtEmail2").value;
-    var senha = document.getElementById("txtSenha2").value;
-
-    var resultado1 = localStorage.getItem(email);
-    var resultado2 = localStorage.getItem(senha);
-
-    if(resultado1 != null && resultado2 == senha)
-    window.location.href = "endereco.html";
-    if(resultado1 != null && resultado2 != senha)
-    alert("Senha incorreta!");
-    else
-    alert("O e-mail informado não existe");
-}
-function Enviar(){
-    alert("Pedido enviado, entraremos em contato com você!")
-}
